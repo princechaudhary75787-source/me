@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda Service - Minimalist Preview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Import the transformed CSS styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #ffffff;
+            color: #000000;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .hero-minimal {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content-minimal {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 800px;
+            padding: 0 2rem;
+        }
+
+        .hero-text-minimal h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            letter-spacing: -2px;
+            color: #000000;
+        }
+
+        .hero-text-minimal p {
+            font-size: 1.4rem;
+            margin-bottom: 3rem;
+            color: #666666;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .hero-ctas-minimal {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-primary-minimal {
+            background: #000000;
+            color: #ffffff;
+            border: 2px solid #000000;
+            padding: 1.25rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-primary-minimal:hover {
+            background: #ffffff;
+            color: #000000;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Features Section */
+        .features-minimal {
+            padding: 6rem 0;
+            background: #ffffff;
+        }
+
+        .features-minimal h2 {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 4rem;
+            color: #000000;
+            letter-spacing: -1px;
+        }
+
+        .features-grid-minimal {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .feature-card-minimal {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 16px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid #e5e5e5;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+        }
+
+        .feature-card-minimal:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+            border-color: #cccccc;
+        }
+
+        .feature-icon-minimal {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: #000000;
+        }
+
+        .feature-card-minimal h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #000000;
+        }
+
+        .feature-card-minimal p {
+            color: #666666;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-text-minimal h1 {
+                font-size: 2.5rem;
+                letter-spacing: -1px;
+            }
+            
+            .hero-text-minimal p {
+                font-size: 1.1rem;
+            }
+            
+            .hero-ctas-minimal {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .features-minimal h2 {
+                font-size: 2.5rem;
+            }
+            
+            .features-grid-minimal {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .feature-card-minimal {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-text-minimal h1 {
+                font-size: 2rem;
+            }
+            
+            .features-minimal h2 {
+                font-size: 2rem;
+            }
+            
+            .feature-card-minimal {
+                padding: 1.5rem;
+            }
+            
+            .cta-primary-minimal {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-minimal">
+        <div class="hero-content-minimal">
+            <div class="hero-text-minimal">
+                <h1>Honda Authorized Service Center</h1>
+                <p>Precision. Performance. Trust. Experience the difference of genuine Honda service</p>
+                <div class="hero-ctas-minimal">
+                    <button class="cta-primary-minimal">Book Service Now</button>
+                    <button class="cta-primary-minimal" style="background: transparent; color: #000000;">Call: +91 1234567890</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-minimal">
+        <div class="container">
+            <h2>Why Choose Our Service?</h2>
+            <div class="features-grid-minimal">
+                <div class="feature-card-minimal">
+                    <div class="feature-icon-minimal">🔧</div>
+                    <h3>Certified Mechanics</h3>
+                    <p>Honda-trained technicians with years of experience</p>
+                </div>
+                <div class="feature-card-minimal">
+                    <div class="feature-icon-minimal">🏍️</div>
+                    <h3>Genuine Parts</h3>
+                    <p>100% authentic Honda parts for optimal performance</p>
+                </div>
+                <div class="feature-card-minimal">
+                    <div class="feature-icon-minimal">⏱️</div>
+                    <h3>Fast Service</h3>
+                    <p>Quick turnaround time without compromising quality</p>
+                </div>
+                <div class="feature-card-minimal">
+                    <div class="feature-icon-minimal">⭐</div>
+                    <h3>5-Star Service</h3>
+                    <p>Rated excellent by thousands of satisfied customers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
